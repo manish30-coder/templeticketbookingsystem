@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --maroon-deep: #3B040B;
+    --maroon-rich: #5C0612;
+    --maroon-hover: #750A18;
+    --maroon-dark: #240206;
+
+    --gold-antique: #C5A059;
+    --gold-bright: #D4AF37;
+    --gold-light: #F4E8C1;
+    --gold-glow: rgba(212, 175, 55, 0.25);
+    --saffron: #D35400;
+    --saffron-bright: #E67E22;
+
+    --sandalwood-ivory: #FAF7EE;
+    --sandalwood-card: #FFFFFF;
+    --sandalwood-subtle: #F3ECE0;
+    --border-gold: rgba(197, 160, 89, 0.4);
+    --border-subtle: #E8DCC9;
+
+    --text-primary: #2A0808;
+    --text-secondary: #5A433A;
+    --text-muted: #846D65;
+    --text-gold: #B8860B;
+    --text-on-maroon: #FDFBF7;
+  }
+
+  body {
+    background-color: var(--sandalwood-ivory);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.03em;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.bg-maroon-deep {
+  background-color: #3B040B;
+}
+
+.bg-maroon-rich {
+  background-color: #5C0612;
+}
+
+.bg-maroon-dark {
+  background-color: #240206;
+}
+
+.bg-gold-antique {
+  background-color: #C5A059;
+}
+
+.bg-gold-bright {
+  background-color: #D4AF37;
+}
+
+.bg-sandalwood-ivory {
+  background-color: #FAF7EE;
+}
+
+.bg-sandalwood-subtle {
+  background-color: #F3ECE0;
+}
+
+.text-maroon-deep {
+  color: #3B040B;
+}
+
+.text-maroon-rich {
+  color: #5C0612;
+}
+
+.text-gold-antique {
+  color: #C5A059;
+}
+
+.text-gold-bright {
+  color: #D4AF37;
+}
+
+.border-gold {
+  border-color: rgba(197, 160, 89, 0.4);
+}
+
+.border-gold-bright {
+  border-color: #D4AF37;
+}
+
+/* Ornamental styling */
+.ornament-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.ornament-line::before,
+.ornament-line::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #D4AF37);
+}
+.ornament-line::after {
+  background: linear-gradient(to left, transparent, #D4AF37);
+}

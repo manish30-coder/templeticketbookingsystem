@@ -1,0 +1,6 @@
+{
+  "name": "Divya Yatra - Temple Ticket Reservation System",
+  "description": "Comprehensive divine temple darshan booking, live queue slot management, and pilgrimage portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
